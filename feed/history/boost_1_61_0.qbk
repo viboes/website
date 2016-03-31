@@ -140,6 +140,12 @@
   * Made the perfect-forwarding constructor SFINAE-friendly, which fixes [@https://svn.boost.org/trac/boost/ticket/12002 Trac #12002]. However, this only works in the newer platforms that correctly implement C++11 `<type_traits>`.
   * Fixed [@https://svn.boost.org/trac/boost/ticket/10445 Trac #10445].
 
+* [phrase library..[@/libs/thread/ Thread 4.7.0]:]
+  * [@http://svn.boost.org/trac/boost/ticket/11772 #11772] Add a launch::sync policy
+  * [@http://svn.boost.org/trac/boost/ticket/11494 #11494] boost::this_thread::yield() is marked as deprecated in the synopsis
+  * [@http://svn.boost.org/trac/boost/ticket/11562 #11562] (condition_variable_any::wait_until + recursive_mutex + steady_clock) timer expires after computer time is set forward on Ubuntu 64-bit
+  * [@http://svn.boost.org/trac/boost/ticket/12013 #12013] F_pass and FArgs_pass tests segfault
+  * [@http://svn.boost.org/trac/boost/ticket/12036 #12036] boost::physical_concurrency always returns 0 if BOOST_USE_WINAPI_VERSION is not defined
 
 * [phrase library..[@/libs/variant/ Variant]:]
   * Maintainance fixes.
